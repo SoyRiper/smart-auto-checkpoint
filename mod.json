@@ -1,0 +1,71 @@
+{
+  "geode": "5.7.1",
+  "gd": {
+    "win": "*",
+    "mac": "*",
+    "android": "*",
+    "ios": "*"
+  },
+  "id": "soyriper.smart_auto_checkpoint",
+  "name": "Smart Auto Checkpoint",
+  "version": "v2.2.0",
+  "developer": "SoyRiper",
+  "repository": "https://github.com/SoyRiper/smart-auto-checkpoint",
+  "description": "Mod inteligente de checkpoints para Modo Práctica en Geometry Dash. Coloca checkpoints estratégicos al tocar suelo, saltar, activar orbes o entrar en portales. Pausa automáticamente al borrar con X.",
+  "settings": {
+    "enabled": {
+      "name": "Habilitar Mod",
+      "description": "Activa o desactiva la colocación inteligente de checkpoints.",
+      "type": "bool",
+      "default": true
+    },
+    "pause-on-delete": {
+      "name": "Pausar al Presionar X / Borrar (2 Segundos)",
+      "description": "Si borras un checkpoint con la tecla X, el mod se pausa 2s para que puedas borrar cómodamente sin que se cree otro.",
+      "type": "bool",
+      "default": true
+    },
+    "checkpoint-on-ground": {
+      "name": "Al Aterrizar en Suelo / Plataforma",
+      "description": "Solo coloca checkpoint al aterrizar tras estar al menos 0.35s en el aire (elimina spam al caminar por el piso).",
+      "type": "bool",
+      "default": true
+    },
+    "checkpoint-on-orbs": {
+      "name": "Al Tocar Orbes, Pads y Dash Rings",
+      "description": "Coloca 1 checkpoint clave al activar un orbe, trampolín o dash ring.",
+      "type": "bool",
+      "default": true
+    },
+    "checkpoint-on-portals": {
+      "name": "Al Entrar en Portales / Vehículos",
+      "description": "Coloca 1 checkpoint clave al entrar en portales de vehículo o gravedad.",
+      "type": "bool",
+      "default": true
+    },
+    "min-checkpoint-cooldown": {
+      "name": "Tiempo Mínimo entre Checkpoints (segundos)",
+      "description": "Separación mínima obligatoria entre cualquier checkpoint (default: 0.60s para cero acumulación).",
+      "type": "float",
+      "default": 0.60,
+      "min": 0.20,
+      "max": 2.0,
+      "control": {
+        "slider": true,
+        "slider-step": 0.05
+      }
+    },
+    "safety-delay": {
+      "name": "Protección tras Respawn (segundos)",
+      "description": "Margen de seguridad tras reaparecer antes de colocar checkpoints (default 0.10s).",
+      "type": "float",
+      "default": 0.10,
+      "min": 0.0,
+      "max": 0.50,
+      "control": {
+        "slider": true,
+        "slider-step": 0.05
+      }
+    }
+  }
+}
