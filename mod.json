@@ -11,6 +11,12 @@
   "version": "v2.2.0",
   "developer": "SoyRiper",
   "repository": "https://github.com/SoyRiper/smart-auto-checkpoint",
+  "tags": [
+    "practice",
+    "utility",
+    "gameplay",
+    "quality-of-life"
+  ],
   "description": "Mod inteligente de checkpoints para Modo Práctica en Geometry Dash. Coloca checkpoints estratégicos al tocar suelo, saltar, activar orbes o entrar en portales. Pausa automáticamente al borrar con X.",
   "settings": {
     "enabled": {
