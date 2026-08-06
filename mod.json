@@ -8,7 +8,7 @@
   },
   "id": "soyriper.smart_auto_checkpoint",
   "name": "Smart Auto Checkpoint",
-  "version": "2.2.2",
+  "version": "1.0.0",
   "developer": "SoyRiper",
   "repository": "https://github.com/SoyRiper/smart-auto-checkpoint",
   "tags": [
@@ -61,7 +61,7 @@
       }
     },
     "safety-delay": {
-      "name": "Protección tras Respawn (segundos)",
+      "name": "Proteccion tras Respawn (segundos)",
       "description": "Margen de seguridad tras reaparecer antes de colocar checkpoints (default 0.10s).",
       "type": "float",
       "default": 0.10,
